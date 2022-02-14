@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/LolloCarne/SSH-LegaAmbiente/issues"
   },
-  "homepage": "https://github.com/LolloCarne/SSH-LegaAmbiente#readme"
+  "homepage": "https://github.com/LolloCarne/SSH-LegaAmbiente#readme",
+  "dependencies": {
+    "express": "^4.17.2"
+  }
 }
