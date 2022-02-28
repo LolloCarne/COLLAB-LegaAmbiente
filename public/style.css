@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 body {    
     min-height : 100%;
     min-width : 100%;
@@ -10,3 +11,12 @@ body {
 #sfondo{
  background-image: url("sfondo.jpg");
 }
+=======
+body {
+    background:url(".\\sfondo.jpg");      
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+   }
+>>>>>>> f3090168e67a024193e7d87857c357a32b469bf3
