@@ -87,44 +87,44 @@
                 <div class="col-lg-19 mx-auto d-flex justify-content-center flex-column">
                   <h3 class="text-center">Anagrafica</h3>
                   <p class="text-center">*Questa parte non verrà condivisa</p>
-                  <form role="form" id="contact-form" method="post" autocomplete="off">
+                  <form role="form" id="contact-form"  autocomplete="off">
                     <div class="card-body">
                       <div class="row">
                         <div class="col-md-6">
                           <div class="input-group input-group-dynamic mb-4">
-                            <input class="form-control" aria-label="" placeholder="Nome Famiglia"type="text" required>
+                            <input class="form-control" aria-label="" placeholder="Nome Famiglia"type="text" required name="Nome">
                           </div>
                         </div>
                         <div class="col-md-6 ps-2">
                           <div class="input-group input-group-dynamic">
 
-                            <input type="text" class="form-control" placeholder="Indirizzo" required>
+                            <input type="text" class="form-control" placeholder="Indirizzo" name="Indirizzo" required>
                           </div>
                         </div>
                         <div class="input-group input-group-dynamic">
-                          <input type="tel" class="form-control" placeholder="Telefono" required>
+                          <input type="tel" class="form-control" placeholder="Telefono" name="Telefono" required>
                         </div>
                       </div>
                       <div class="mb-4 pt-2">
                         <div class="input-group input-group-dynamic">
-                          <input type="email" class="form-control" placeholder="Indirizzo Email" required>
+                          <input type="email" class="form-control" placeholder="Indirizzo Email" name="Email" required>
                         </div>
                       </div>
                       <div class="row">
                         <p class="text-center">*Da questo punto in poi i dati verranno utilizzati a livello statistico.</p>
                       <div class="col-md-6">
                         <div class="input-group input-group-dynamic mb-4">
-                          <input class="form-control" placeholder="Città" type="text" required>
+                          <input class="form-control" placeholder="Città" type="text" name="Città" required>
                         </div>
                       </div>
                       <div class="col-md-6 ps-2">
                         <div class="input-group input-group-dynamic">
-                          <input type="text" class="form-control" placeholder="Regione" required>
+                          <input type="text" class="form-control" placeholder="Regione" name="Regione" required id="regione">
                         </div>
                       </div>
                     </div>
                     <div class="input-group input-group-dynamic">
-                      <input type="number" min="0" class="form-control" placeholder="Numero componenti familiari (es. 3)" required>
+                      <input type="number" min="0" class="form-control" placeholder="Numero componenti familiari (es. 3)" name="familiari" required>
                     </div>
                       
 
@@ -132,16 +132,16 @@
                       <div class="row">
                         <div class="col-md-12 pt-2">
                           <div class="form-check form-switch mb-4 d-flex align-items-center">
-                            <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault" checked="">
+                            <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault" checked="" name="Newsletter">
                             <label class="form-check-label ms-3 mb-0" for="flexSwitchCheckDefault">Accetto di iscrivermi alla newsletter.</label>
                           </div>
                           <div class="form-check form-switch mb-4 d-flex align-items-center">
-                            <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault" required>
+                            <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault" required> 
                             <label class="form-check-label ms-3 mb-0" for="flexSwitchCheckDefault">Utilizzando questo modulo accetti la memorizzazione e la gestione dei tuoi dati da questo sito web.</label>
                           </div>
                         </div>
                         <div class="col-md-12">
-                          <a href="#"><button type="submit" class="btn bg-gradient-primary  w-100">INIZIA</button></a>
+                           <a href="#Domande"><button class="btn bg-gradient-primary  w-100" type="submit" >INIZIA</button></a>
                         </div>
                        
                       </div>
@@ -157,9 +157,9 @@
 </section>
 
 
-<section class="my-1 py-1">
+<section class="my-1 py-1" style="display:none; width:100%" id="Domande">
   
-  <div class="row">
+  <div class="row"  >
     <!--parte sinistra-->
     <div class="col-lg-3">
       <div class="position-sticky pb-lg-5 pb-3 mt-lg-0 mt-5 ps-2" style="top: 100px">
@@ -199,26 +199,26 @@
         <div class="col-3 mx-auto text-start">
           <!--contenuto-->
           <div class="form-check" >
-            <input class="form-check-input" type="radio" name="TipologiaDiAbitazione" id="AppartamentoCondominiale">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
             <label class="form-check-label" for="flexRadioDefault1">
               Appartamento <br> condominiale
             </label>
           </div>
           <div class="form-check">
-            <input class="form-check-input" type="radio" name="TipologiaDiAbitazione" id="AbitazioneASchiera" checked>
-            <label class="form-check-label" for="AbitazioneASchiera">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+            <label class="form-check-label" for="flexRadioDefault2">
               Abitazione a schiera
             </label>
           </div>
           <div class="form-check">
-            <input class="form-check-input" type="radio" name="TipologiaDiAbitazione" id="VillaFamiliare" checked>
-            <label class="form-check-label" for="VillaFamiliare">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+            <label class="form-check-label" for="flexRadioDefault2">
               Villa familiare
             </label>
           </div>
           <div class="form-check">
-            <input class="form-check-input" type="radio" name="TipologiaDiAbitazione" id="VillaMonofamiliare" checked>
-            <label class="form-check-label" for="VillaMonofamiliare">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+            <label class="form-check-label" for="flexRadioDefault2">
               Villa monofamiliare
             </label>
           </div>
@@ -345,14 +345,14 @@
           <div class="col-3 mx-auto text-start">
             <!--contenuto-->
             <div class="form-check">
-              <input class="form-check-input" type="radio" name="Ristrutturazione" id="SiRistrutturazione">
-              <label class="form-check-label" for="SiRistrutturazione">
+              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+              <label class="form-check-label" for="flexRadioDefault1">
                 Sì	
               </label>
             </div>
             <div class="form-check">
-              <input class="form-check-input" type="radio" name="Ristrutturazione" id="NoRistrutturazione" checked>
-              <label class="form-check-label" for="NoRistrutturazione">
+              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+              <label class="form-check-label" for="flexRadioDefault2">
                 No
               </label>
             </div>
@@ -418,14 +418,14 @@
         <div class="col-3 mx-auto text-start">
           <!--contenuto-->
           <div class="form-check">
-            <input class="form-check-input" type="radio" name="TipologiaImpiantoTermico" id="Autonomo">
-            <label class="form-check-label" for="Autonomo">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+            <label class="form-check-label" for="flexRadioDefault1">
               Autonomo
             </label>
           </div>
           <div class="form-check">
-            <input class="form-check-input" type="radio" name="TipologiaImpiantoTermico" id="Centralizzato" checked>
-            <label class="form-check-label" for="Centralizzato">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+            <label class="form-check-label" for="flexRadioDefault2">
               Centralizzato
             </label>
           </div>
@@ -474,14 +474,14 @@
         <div class="col-3 mx-auto text-start">
           <!--contenuto-->
           <div class="form-check">
-            <input class="form-check-input" type="radio" name="CaldaiaACondensazione" id="SiCaldaiaCondensazione">
-            <label class="form-check-label" for="SiCaldaiaCondensazione">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+            <label class="form-check-label" for="flexRadioDefault1">
               Sì
             </label>
           </div>
           <div class="form-check">
-            <input class="form-check-input" type="radio" name="CaldaiaACondensazione" id="SiCaldaiaCondensazione" checked>
-            <label class="form-check-label" for="SiCaldaiaCondensazione">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+            <label class="form-check-label" for="flexRadioDefault2">
               No
             </label>
           </div>
@@ -530,20 +530,20 @@
           <div class="col-3 mx-auto text-start">
             <!--contenuto-->
             <div class="form-check">
-              <input class="form-check-input" type="radio" name="TipoRegolazioneTemperatura" id="TermostatoAmbiente">
-              <label class="form-check-label" for="TermostatoAmbiente">
+              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+              <label class="form-check-label" for="flexRadioDefault1">
                 Termostato ambiente 
               </label>
             </div>
             <div class="form-check">
-              <input class="form-check-input" type="radio" name="TipoRegolazioneTemperatura" id="ValvoleTermostatiche" checked>
-              <label class="form-check-label" for="ValvoleTermostatiche">
+              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+              <label class="form-check-label" for="flexRadioDefault2">
                 Valvole termostatiche 
               </label>
             </div>
             <div class="form-check">
-              <input class="form-check-input" type="radio" name="TipoRegolazioneTemperatura" id="AltroTipoRegolazione" checked>
-              <label class="form-check-label" for="AltroTipoRegolazione">
+              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+              <label class="form-check-label" for="flexRadioDefault2">
                 Altro
               </label>
             </div>
@@ -592,20 +592,20 @@
           <div class="col-3 mx-auto text-start">
             <!--contenuto-->
             <div class="form-check">
-              <input class="form-check-input" type="radio" name="TipoDiffusoreCalore" id="RadiatoriGhisa_o_Alluminio">
-              <label class="form-check-label" for="RadiatoriGhisa_o_Alluminio">
+              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+              <label class="form-check-label" for="flexRadioDefault1">
                 Radiatori ghisa o alluminio	
               </label>
             </div>
             <div class="form-check">
-              <input class="form-check-input" type="radio" name="TipoDiffusoreCalore" id="PavimentoRadiante" checked>
-              <label class="form-check-label" for="PavimentoRadiante">
+              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+              <label class="form-check-label" for="flexRadioDefault2">
                 Pavimento radiante 
               </label>
             </div>
             <div class="form-check">
-              <input class="form-check-input" type="radio" name="TipoDiffusoreCalore" id="Ventilconvettori" checked>
-              <label class="form-check-label" for="Ventilconvettori">
+              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+              <label class="form-check-label" for="flexRadioDefault2">
                 Ventilconvettori 
               </label>
             </div>
@@ -694,32 +694,32 @@
           <div class="col-6 mx-auto text-start">
             <!--contenuto-->
             <div class="form-check">
-              <input class="form-check-input" type="radio" name="IsolamentoTermico" id="InfissiTaglioTermico">
-              <label class="form-check-label" for="InfissiTaglioTermico">
+              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+              <label class="form-check-label" for="flexRadioDefault1">
                 Infissi a taglio termico 	
               </label>
             </div>
             <div class="form-check">
-              <input class="form-check-input" type="radio" name="IsolamentoTermico" id="OmbreggiamentoSoleggiamento" checked>
-              <label class="form-check-label" for="OmbreggiamentoSoleggiamento">
+              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+              <label class="form-check-label" for="flexRadioDefault2">
                 Sistemi per ombreggiamento/soleggiamento 
               </label>
             </div>
             <div class="form-check">
-              <input class="form-check-input" type="radio" name="IsolamentoTermico" id="DoppiVetri" checked>
-              <label class="form-check-label" for="DoppiVetri">
+              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+              <label class="form-check-label" for="flexRadioDefault2">
                 Doppi vetri
               </label>
             </div>
             <div class="form-check">
-              <input class="form-check-input" type="radio" name="IsolamentoTermico" id="CappottoEsterno" checked>
-              <label class="form-check-label" for="CappottoEsterno">
+              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+              <label class="form-check-label" for="flexRadioDefault2">
                 Cappotto esterno
               </label>
             </div>
             <div class="form-check">
-              <input class="form-check-input" type="radio" name="IsolamentoTermico" id="CappottoInterno" checked>
-              <label class="form-check-label" for="CappottoInterno">
+              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+              <label class="form-check-label" for="flexRadioDefault2">
                 Cappotto interno
               </label>
             </div>
@@ -768,14 +768,14 @@
           <div class="col-3 mx-auto text-start">
             <!--contenuto-->
             <div class="form-check">
-              <input class="form-check-input" type="radio" name="ProblemiUmidità" id="SiUmidita">
-              <label class="form-check-label" for="SiUmidita">
+              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+              <label class="form-check-label" for="flexRadioDefault1">
                 Sì	
               </label>
             </div>
             <div class="form-check">
-              <input class="form-check-input" type="radio" name="ProblemiUmidità" id="NoUmidita" checked>
-              <label class="form-check-label" for="NoUmidita">
+              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+              <label class="form-check-label" for="flexRadioDefault2">
                 No
               </label>
             </div>
@@ -824,14 +824,14 @@
           <div class="col-3 mx-auto text-start">
             <!--contenuto-->
             <div class="form-check">
-              <input class="form-check-input" type="radio" name="ProblemiMuffa" id="SiMuffa">
-              <label class="form-check-label" for="SiMuffa">
+              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+              <label class="form-check-label" for="flexRadioDefault1">
                 Sì	
               </label>
             </div>
             <div class="form-check">
-              <input class="form-check-input" type="radio" name="ProblemiMuffa" id="NoMuffa" checked>
-              <label class="form-check-label" for="NoMuffa">
+              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+              <label class="form-check-label" for="flexRadioDefault2">
                 No
               </label>
             </div>
@@ -880,14 +880,14 @@
           <div class="col-3 mx-auto text-start">
             <!--contenuto-->
             <div class="form-check">
-              <input class="form-check-input" type="radio" name="EccessivoFreddoCaldo" id="SiEccessivoFreddoCaldo">
-              <label class="form-check-label" for="SiEccessivoFreddoCaldo">
+              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+              <label class="form-check-label" for="flexRadioDefault1">
                 Sì	
               </label>
             </div>
             <div class="form-check">
-              <input class="form-check-input" type="radio" name="EccessivoFreddoCaldo" id="NoEccessivoFreddoCaldo" checked>
-              <label class="form-check-label" for="NoEccessivoFreddoCaldo">
+              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+              <label class="form-check-label" for="flexRadioDefault2">
                 No
               </label>
             </div>
@@ -952,14 +952,14 @@
         <div class="col-3 mx-auto text-start">
           <!--contenuto-->
           <div class="form-check">
-            <input class="form-check-input" type="radio" name="CondizionamentoEstivo" id="SiCondizionamentoEstivo">
-            <label class="form-check-label" for="SiCondizionamentoEstivo">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+            <label class="form-check-label" for="flexRadioDefault1">
               Sì
             </label>
           </div>
           <div class="form-check">
-            <input class="form-check-input" type="radio" name="CondizionamentoEstivo" id="NoCondizionamentoEstivo" checked>
-            <label class="form-check-label" for="NoCondizionamentoEstivo">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+            <label class="form-check-label" for="flexRadioDefault2">
               No
             </label>
           </div>
@@ -1194,8 +1194,20 @@
             <td style="border:1px solid black; border-collapse: collapse"><input min="0" style="width:95%"type="number" class="form-control" placeholder="" required></td>
             <td style="border:1px solid black; border-collapse: collapse"><input min="0" style="width:97%" type="number" class="form-control" placeholder="" required></td>
           </tr>
-
-
+          <tr style="border:1px solid black; border-collapse: collapse">
+            <td style="border:1px solid black; border-collapse: collapse"><input type="text" class="form-control" placeholder="Altro..."></td>
+            <td style="border:1px solid black; border-collapse: collapse"><input min="0" type="number" class="form-control" placeholder="" required></td>
+            <td style="border:1px solid black; border-collapse: collapse"><input min="0" type="number" class="form-control" placeholder="" required></td>
+            <td style="border:1px solid black; border-collapse: collapse"><input min="0" style="width:95%" type="number" class="form-control" placeholder="" required></td>
+            <td style="border:1px solid black; border-collapse: collapse"><input min="0" style="width:97%" type="number" class="form-control" placeholder="" required></td>
+          </tr>
+          <tr style="border:1px solid black; border-collapse: collapse">
+            <td style="border:1px solid black; border-collapse: collapse"><input type="text" class="form-control" placeholder="Altro..."></td>
+            <td style="border:1px solid black; border-collapse: collapse"><input min="0" type="number" class="form-control" placeholder="" required></td>
+            <td style="border:1px solid black; border-collapse: collapse"><input min="0" type="number" class="form-control" placeholder="" required></td>
+            <td style="border:1px solid black; border-collapse: collapse"><input style="width:95%" min="0" type="number" class="form-control" placeholder="" required></td>
+            <td style="border:1px solid black; border-collapse: collapse"><input style="width:97%" min="0" type="number" class="form-control" placeholder="" required></td>
+          </tr>
           
         </table>
 
@@ -1237,14 +1249,14 @@
           <div class="col-3 mx-auto text-start">
             <!--contenuto-->
             <div class="form-check">
-              <input class="form-check-input" type="radio" name="LuciNonUtilizzate" id="SiSpenteNotUsed">
-              <label class="form-check-label" for="SiSpenteNotUsed">
+              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+              <label class="form-check-label" for="flexRadioDefault1">
                 Sì
               </label>
             </div>
             <div class="form-check">
-              <input class="form-check-input" type="radio" name="LuciNonUtilizzate" id="NoSpenteNotUsed" checked>
-              <label class="form-check-label" for="NoSpenteNotUsed">
+              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+              <label class="form-check-label" for="flexRadioDefault2">
                 No
               </label>
             </div>
@@ -1294,14 +1306,14 @@
           <div class="col-3 mx-auto text-start">
             <!--contenuto-->
             <div class="form-check">
-              <input class="form-check-input" type="radio" name="ApparecchiNonUsati" id="SiSpentiApparecchiNonUsati">
-              <label class="form-check-label" for="SiSpentiApparecchiNonUsati">
+              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+              <label class="form-check-label" for="flexRadioDefault1">
                 Sì
               </label>
             </div>
             <div class="form-check">
-              <input class="form-check-input" type="radio" name="ApparecchiNonUsati" id="NoSpentiApparecchiNonUsati" checked>
-              <label class="form-check-label" for="NoSpentiApparecchiNonUsati">
+              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+              <label class="form-check-label" for="flexRadioDefault2">
                 No
               </label>
             </div>
@@ -2010,7 +2022,11 @@
             <td style="border:1px solid black; border-collapse: collapse"><input style="width:95%" type="radio" class="form-control" placeholder="" required></td>
             <td style="border:1px solid black; border-collapse: collapse"><input style="width:97%" type="radio" class="form-control" placeholder="" required></td>
           </tr>
-
+          <tr style="border:1px solid black; border-collapse: collapse">
+            <td style="border:1px solid black; border-collapse: collapse"><input style="width:97%" type="text" class="form-control" placeholder="Altro..." required></td>
+            <td style="border:1px solid black; border-collapse: collapse"><input style="width:95%" type="radio" class="form-control" placeholder="" required></td>
+            <td style="border:1px solid black; border-collapse: collapse"><input style="width:97%" type="radio" class="form-control" placeholder="" required></td>
+          </tr>
           
         </table>
 
@@ -2101,6 +2117,9 @@
             <td style="border:1px solid black; border-collapse: collapse">Stireria, lavanderia</td>
             <td style="border:1px solid black; border-collapse: collapse"><input style="width:95%" type="radio" class="form-control" placeholder="" required></td>
             <td style="border:1px solid black; border-collapse: collapse"><input style="width:97%" type="radio" class="form-control" placeholder="" required></td>
+            <td style="border:1px solid black; border-collapse: collapse"><input type="text" class="form-control" placeholder="Altro..." required></td>
+            <td style="border:1px solid black; border-collapse: collapse"><input style="width:95%" type="radio" class="form-control" placeholder="" required></td>
+            <td style="border:1px solid black; border-collapse: collapse"><input style="width:97%" type="radio" class="form-control" placeholder="" required></td>
           </tr>
           
         </table>
@@ -2167,6 +2186,9 @@
 
           <tr style="border:1px solid black; border-collapse: collapse">
             <td style="border:1px solid black; border-collapse: collapse">Strumenti musicali</td>
+            <td style="border:1px solid black; border-collapse: collapse"><input style="width:95%" type="radio" class="form-control" placeholder="" required></td>
+            <td style="border:1px solid black; border-collapse: collapse"><input style="width:97%" type="radio" class="form-control" placeholder="" required></td>
+            <td style="border:1px solid black; border-collapse: collapse"><input type="text" class="form-control" placeholder="Altro..."></td>
             <td style="border:1px solid black; border-collapse: collapse"><input style="width:95%" type="radio" class="form-control" placeholder="" required></td>
             <td style="border:1px solid black; border-collapse: collapse"><input style="width:97%" type="radio" class="form-control" placeholder="" required></td>
           </tr>
@@ -2237,6 +2259,9 @@
             <td style="border:1px solid black; border-collapse: collapse">Lingue straniere</td>
             <td style="border:1px solid black; border-collapse: collapse"><input style="width:95%" type="radio" class="form-control" placeholder="" required></td>
             <td style="border:1px solid black; border-collapse: collapse"><input style="width:97%" type="radio" class="form-control" placeholder="" required></td>
+            <td style="border:1px solid black; border-collapse: collapse"><input type="text" class="form-control" placeholder="Altro..."></td>
+            <td style="border:1px solid black; border-collapse: collapse"><input style="width:95%" type="radio" class="form-control" placeholder="" required></td>
+            <td style="border:1px solid black; border-collapse: collapse"><input style="width:97%" type="radio" class="form-control" placeholder="" required></td>
           </tr>
           
         </table>
@@ -2286,6 +2311,11 @@
 </div>
 
 <!--   Core JS Files   -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+
+
 <script src="./assets/js/core/popper.min.js" type="text/javascript"></script>
 <script src="./assets/js/core/bootstrap.min.js" type="text/javascript"></script>
 <script src="./assets/js/plugins/perfect-scrollbar.min.js"></script>
@@ -2323,6 +2353,15 @@
 
 
 <script type="text/javascript">
+$("#contact-form").submit(async function(e) {
+e.preventDefault(); // avoid to execute the actual submit of the form.
+$("#Domande").css("display","block");
+
+var form = $("#contact-form");
+const res = await axios.post("/anagrafica", form.serialize());
+return false;
+});
+  
 
   if (document.getElementById('state1')) {
     const countUp = new CountUp('state1', document.getElementById("state1").getAttribute("countTo"));
@@ -2355,11 +2394,6 @@
       document.getElementById("annoRistr").style.display="block";
     }
   }
-  //if((document.getElementById('annoChecked')).checked){
-    console.log(document.getElementById('annoCostruzione').value);
-    //console.log((document.getElementById('annoChecked').checked));
-    //document.getElementById("annoRistr").style.display="block";
-  //}
 </script>
 </body>
 </html>
