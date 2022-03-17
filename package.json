@@ -18,6 +18,9 @@
   },
   "homepage": "https://github.com/LolloCarne/SSH-LegaAmbiente#readme",
   "dependencies": {
-    "express": "^4.17.2"
+    "axios": "^0.26.1",
+    "express": "^4.17.2",
+    "md5": "^2.3.0",
+    "sqlite3": "^5.0.2"
   }
 }

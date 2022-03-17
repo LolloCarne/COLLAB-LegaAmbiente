@@ -87,44 +87,44 @@
                 <div class="col-lg-19 mx-auto d-flex justify-content-center flex-column">
                   <h3 class="text-center">Anagrafica</h3>
                   <p class="text-center">*Questa parte non verrà condivisa</p>
-                  <form role="form" id="contact-form" method="post" autocomplete="off">
+                  <form role="form" id="contact-form"  autocomplete="off">
                     <div class="card-body">
                       <div class="row">
                         <div class="col-md-6">
                           <div class="input-group input-group-dynamic mb-4">
-                            <input class="form-control" aria-label="" placeholder="Nome Famiglia"type="text" required>
+                            <input class="form-control" aria-label="" placeholder="Nome Famiglia"type="text" required name="Nome">
                           </div>
                         </div>
                         <div class="col-md-6 ps-2">
                           <div class="input-group input-group-dynamic">
 
-                            <input type="text" class="form-control" placeholder="Indirizzo" required>
+                            <input type="text" class="form-control" placeholder="Indirizzo" name="Indirizzo" required>
                           </div>
                         </div>
                         <div class="input-group input-group-dynamic">
-                          <input type="tel" class="form-control" placeholder="Telefono" required>
+                          <input type="tel" class="form-control" placeholder="Telefono" name="Telefono" required>
                         </div>
                       </div>
                       <div class="mb-4 pt-2">
                         <div class="input-group input-group-dynamic">
-                          <input type="email" class="form-control" placeholder="Indirizzo Email" required>
+                          <input type="email" class="form-control" placeholder="Indirizzo Email" name="Email" required>
                         </div>
                       </div>
                       <div class="row">
                         <p class="text-center">*Da questo punto in poi i dati verranno utilizzati a livello statistico.</p>
                       <div class="col-md-6">
                         <div class="input-group input-group-dynamic mb-4">
-                          <input class="form-control" placeholder="Città" type="text" required>
+                          <input class="form-control" placeholder="Città" type="text" name="Città" required>
                         </div>
                       </div>
                       <div class="col-md-6 ps-2">
                         <div class="input-group input-group-dynamic">
-                          <input type="text" class="form-control" placeholder="Regione" required>
+                          <input type="text" class="form-control" placeholder="Regione" name="Regione" required id="regione">
                         </div>
                       </div>
                     </div>
                     <div class="input-group input-group-dynamic">
-                      <input type="number" min="0" class="form-control" placeholder="Numero componenti familiari (es. 3)" required>
+                      <input type="number" min="0" class="form-control" placeholder="Numero componenti familiari (es. 3)" name="familiari" required>
                     </div>
                       
 
@@ -132,16 +132,16 @@
                       <div class="row">
                         <div class="col-md-12 pt-2">
                           <div class="form-check form-switch mb-4 d-flex align-items-center">
-                            <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault" checked="">
+                            <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault" checked="" name="Newsletter">
                             <label class="form-check-label ms-3 mb-0" for="flexSwitchCheckDefault">Accetto di iscrivermi alla newsletter.</label>
                           </div>
                           <div class="form-check form-switch mb-4 d-flex align-items-center">
-                            <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault" required>
+                            <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault" required> 
                             <label class="form-check-label ms-3 mb-0" for="flexSwitchCheckDefault">Utilizzando questo modulo accetti la memorizzazione e la gestione dei tuoi dati da questo sito web.</label>
                           </div>
                         </div>
                         <div class="col-md-12">
-                          <a href="#"><button type="submit" class="btn bg-gradient-primary  w-100">INIZIA</button></a>
+                           <a href="#Domande"><button class="btn bg-gradient-primary  w-100" type="submit" >INIZIA</button></a>
                         </div>
                        
                       </div>
@@ -157,9 +157,9 @@
 </section>
 
 
-<section class="my-1 py-1">
+<section class="my-1 py-1" style="display:none; width:100%" id="Domande">
   
-  <div class="row">
+  <div class="row"  >
     <!--parte sinistra-->
     <div class="col-lg-3">
       <div class="position-sticky pb-lg-5 pb-3 mt-lg-0 mt-5 ps-2" style="top: 100px">
@@ -2311,6 +2311,11 @@
 </div>
 
 <!--   Core JS Files   -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+
+
 <script src="./assets/js/core/popper.min.js" type="text/javascript"></script>
 <script src="./assets/js/core/bootstrap.min.js" type="text/javascript"></script>
 <script src="./assets/js/plugins/perfect-scrollbar.min.js"></script>
@@ -2348,6 +2353,15 @@
 
 
 <script type="text/javascript">
+$("#contact-form").submit(async function(e) {
+e.preventDefault(); // avoid to execute the actual submit of the form.
+$("#Domande").css("display","block");
+
+var form = $("#contact-form");
+const res = await axios.post("/anagrafica", form.serialize());
+return false;
+});
+  
 
   if (document.getElementById('state1')) {
     const countUp = new CountUp('state1', document.getElementById("state1").getAttribute("countTo"));
@@ -2380,11 +2394,6 @@
       document.getElementById("annoRistr").style.display="block";
     }
   }
-  //if((document.getElementById('annoChecked')).checked){
-    console.log(document.getElementById('annoCostruzione').value);
-    //console.log((document.getElementById('annoChecked').checked));
-    //document.getElementById("annoRistr").style.display="block";
-  //}
 </script>
 </body>
 </html>
