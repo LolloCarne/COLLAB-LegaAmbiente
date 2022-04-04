@@ -20,6 +20,7 @@
   "dependencies": {
     "express": "^4.17.2",
     "md5": "^2.3.0",
+    "mongoose": "^6.2.7",
     "sqlite": "^4.0.25",
     "sqlite3": "^5.0.2"
   }

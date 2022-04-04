@@ -1,62 +1,54 @@
-import express from 'express';
-import path from 'path';
-import { cwd } from 'process';
+import express from "express";
+import path from "path";
+import { cwd } from "process";
+import mongoose from "mongoose";
+import Anagrafica from "./models/anagrafica.js";
 
 const app = express();
 const port = 2000;
-let anagrafiche=[];
+let anagrafiche = [];
 
-app.use(express.urlencoded({extended: false}));
+mongoose
+  .connect("mongodb://localhost:27017/questionario")
+  .then((result) => console.log("connect to db"))
+  .catch((err) => console.log(err));
+
+app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 
-app.use(express.static('public'))
-app.get("/", (req, res)=>{
+app.use(express.static("public"));
+app.get("/", (req, res) => {
+  // var options = {
+  //     root: path.join(cwd(),'index.html')
+  // };
 
-    // var options = {
-    //     root: path.join(cwd(),'index.html')
-    // };
-     
-    res.sendFile(path.join(cwd(),'index.html')) //cwd() riturna la current directory
+  res.sendFile(path.join(cwd(), "index.html")); //cwd() riturna la current directory
 });
 
-app.post('/anagrafica', (req,res)=>{
-
-let anagrafica={
-    pubblica:{
-        "Città":req.body.Città,
-        "Regione":req.body.Regione,
-        "Numero componenti familiari": req.body.familiari
-
+app.post("/anagrafica", (req, res) => {
+  const anagrafica = new Anagrafica({
+    pubblica: {
+      Città: req.body.Città,
+      Regione: req.body.Regione,
+      Familiari: req.body.familiari,
     },
-    privata:{
-        "Nome Famiglia": req.body.Nome,
-        "Indirizzo": req.body.Indirizzo,
-        "Telefono": req.body.Telefono,
-        "E-mail": req.body.Email
+    privata: {
+      NomeFamiglia: req.body.Nome,
+      Indirizzo: req.body.Indirizzo,
+      Telefono: req.body.Telefono,
+      Email: req.body.Email,
+    },
+  });
 
-    }
-}
-anagrafiche.push(anagrafica)
-console.log(anagrafiche)
-
+  anagrafica.save().then((result) => {
+    res.send(result);
+  });
+  anagrafiche.push(anagrafica);
+  console.log(anagrafiche);
 });
 
-/*let domande = [];
-domande.push({
-    domanda: "testo domanda",
-    ripsoste: []
-})
+app.post("/send", (req, res) => {});
 
-let anagrafica=[];
-anagrafica.push({
-pritvata:{
-    nome:""
-},
-pubblica:{
-
-}    
-})*/
-
-app.listen(port, ()=>{
-    console.log('listening on '+port)
-})
+app.listen(port, () => {
+  console.log("listening on " + port);
+});
