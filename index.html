@@ -156,7 +156,7 @@
     </div>
 </section>
 
-
+<form id="form">
 <section class="my-1 py-1" style="display:none; width:100%" id="Domande">
   
   <div class="row"  >
@@ -199,25 +199,25 @@
         <div class="col-3 mx-auto text-start">
           <!--contenuto-->
           <div class="form-check" >
-            <input class="form-check-input" type="radio" name="TipologiaAbitazione" id="AppartamentoCondominiale">
+            <input class="form-check-input" type="radio" name="TipologiaAbitazione" id="AppartamentoCondominiale" value="Appartamento  condominiale">
             <label class="form-check-label" for="AppartamentoCondominiale">
-              Appartamento <br> condominiale
+              Appartamento  condominiale
             </label>
           </div>
           <div class="form-check">
-            <input class="form-check-input" type="radio" name="TipologiaAbitazione" id="AbitazioneASchiera" >
+            <input class="form-check-input" type="radio" name="TipologiaAbitazione" id="AbitazioneASchiera" value="Abitazione a schiera" >
             <label class="form-check-label" for="AbitazioneASchiera">
               Abitazione a schiera
             </label>
           </div>
           <div class="form-check">
-            <input class="form-check-input" type="radio" name="TipologiaAbitazione" id="VillaFamiliare" >
+            <input class="form-check-input" type="radio" name="TipologiaAbitazione" id="VillaFamiliare" value="Villa familiare">
             <label class="form-check-label" for="VillaFamiliare">
               Villa familiare
             </label>
           </div>
           <div class="form-check">
-            <input class="form-check-input" type="radio" name="TipologiaAbitazione" id="VillaMonofamiliare" >
+            <input class="form-check-input" type="radio" name="TipologiaAbitazione" id="VillaMonofamiliare" value="Villa monofamiliare" >
             <label class="form-check-label" for="VillaMonofamiliare">
               Villa monofamiliare
             </label>
@@ -2273,12 +2273,12 @@
 
       <div class="row mt-3"></div>
   </div>
-  <a href="#" class="btn btn-sm  bg-gradient-primary  mb-0 me-1 mt-1 mt-md-0" onclick="invia()">INVIA</a>
+  <button class="btn bg-gradient-primary  w-100" type="button" onclick="invia()">INVIA</button>
  </div>
 </div>
 
 </section>
-
+</form>
 
 <!-- -------   START PRE-FOOTER 2 - simple social line w/ title & 3 buttons    -------- -->
 <div class="py-5">
@@ -2347,13 +2347,16 @@
 
 
 <script type="text/javascript">
-$("#contact-form").submit(async function(e) {
-e.preventDefault(); // avoid to execute the actual submit of the form.
-$("#Domande").css("display","block");
+const form = $("#contact-form");
+form.submit(async function(e) {
+  e.preventDefault(); // avoid to execute the actual submit of the form.
+  $("#Domande").css("display","block");
 
-var form = $("#contact-form");
-const res = await axios.post("/anagrafica", form.serialize());
-return false;
+  // form.querySelectorAll(".form-check-input").forEach(e => console.log(e.parentNode.textContent))
+  //console.log(form.find(".form-check-input").each((i, e) => e.parent().find("label").text()))
+
+  const res = await axios.post("/anagrafica", form.serialize());
+  return false;
 });
   
 
@@ -2389,10 +2392,29 @@ return false;
     }
 
   }
-  function invia(){
-  const radios= document.querySelectorAll('.form-check-input')
-  console.log(radios)
+
+  
+
+ 
+async function invia(){
+  const arr=[]
+  console.log(document.querySelector('input[class="form-check-input"]:checked').val())
+  /*var radios=document.getElementsByClassName('form-check-input')
+  Array.prototype.forEach.call(radios, function(radio) {
+    if(radio.checked){
+      console.log(radio.value)
+    }
+}); 
+
+/*var questionario= $("#form");
+const res = await axios.post("/send", questionario.serialize());
+return false;*/
+
+
 }
+
+
+
 </script>
 </body>
 </html>

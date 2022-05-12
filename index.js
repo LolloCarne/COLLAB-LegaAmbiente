@@ -47,7 +47,9 @@ app.post("/anagrafica", (req, res) => {
   console.log(anagrafiche);
 });
 
-app.post("/send", (req, res) => {});
+app.post("/send", (req, res) => {
+  console.log(req.body);
+});
 
 app.listen(port, () => {
   console.log("listening on " + port);
