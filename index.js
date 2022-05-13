@@ -25,6 +25,14 @@ app.get("/", (req, res) => {
   res.sendFile(path.join(cwd(), "index.html")); //cwd() riturna la current directory
 });
 
+app.get("/Domande", (req, res) => {
+  // var options = {
+  //     root: path.join(cwd(),'index.html')
+  // };
+
+  res.sendFile(path.join(cwd(), "domande.html")); //cwd() riturna la current directory
+});
+
 app.post("/anagrafica", (req, res) => {
   const anagrafica = new Anagrafica({
     pubblica: {
