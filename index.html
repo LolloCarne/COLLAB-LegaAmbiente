@@ -175,6 +175,11 @@
       <div class="col-12">
       <div class="position-relative border-radius-xl overflow-hidden shadow-lg mb-7">
         <div class="container border-bottom">
+
+
+
+
+
           <div class="row justify-space-between py-2">
             <div class="col-lg-3 me-auto">
               <p class="lead text-dark pt-1 mb-0" >Tipologia di abitazione</p>
@@ -186,7 +191,10 @@
               </div>
             </div>
           </div>
+
+
         </div>
+
         <div class="tab-content tab-space">
           <div class="tab-pane active" id="preview-btn-outline">
             <iframe width="100%" height="auto" srcdoc='<!doctype html><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -231,6 +239,9 @@
     </div>
     
               '></iframe>
+          </div>
+          <div class="col-md-12">
+            <a href="#Avanti1"><button class="btn bg-gradient-primary  w-100" type="submit" onClick="location.href='#Domande'">AVANTI</button></a>
           </div>
 
         </div>
@@ -2358,7 +2369,37 @@ form.submit(async function(e) {
   const res = await axios.post("/anagrafica", form.serialize());
   return false;
 });
-  
+
+const form1 = $("#domanda1");
+form.submit(async function(e) {
+  e.preventDefault(); // avoid to execute the actual submit of the form.
+  $("#Avanti1").css("display","block");
+  const res = await axios.post("/domanda1", form.serialize());
+  return false;
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   if (document.getElementById('state1')) {
     const countUp = new CountUp('state1', document.getElementById("state1").getAttribute("countTo"));
