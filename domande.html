@@ -117,7 +117,7 @@
           <div class="col-3 mx-auto text-start">
             <!--contenuto-->
         <div class="input-group input-group-dynamic">
-          <input type="number" class="form-control" placeholder="es. 200" id="mq_appartamento" required>
+          <input type="number" value=""  placeholder="es. 200" id="mq_appartamento" class="form-control" required>
         </div>
         <!--contenuto-->
         </div>
@@ -154,7 +154,7 @@
           <div class="col-3 mx-auto text-start">
             <!--contenuto-->
         <div class="input-group input-group-dynamic">
-          <input type="number" min="1900" max="2099" step="1" value="2021" class="form-control" placeholder="es. 200" id="annoCostruzione" required>
+          <input type="number" value="" min="1900" max="2099" step="1" value="2021"  placeholder="es. 200" id="annoCostruzione" class="form-control" required>
         </div>
         <!--contenuto-->
         </div>
@@ -264,13 +264,13 @@
         <div class="col-3 mx-auto text-start">
           <!--contenuto-->
           <div class="form-check">
-            <input class="form-check-input" type="radio" name="TipologiaImpiantoTermico" id="Autonomo">
+            <input class="form-check-input" type="radio" name="TipologiaImpiantoTermico" id="Autonomo" value="Autonomo">
             <label class="form-check-label" for="Autonomo">
               Autonomo
             </label>
           </div>
           <div class="form-check">
-            <input class="form-check-input" type="radio" name="TipologiaImpiantoTermico" id="Centralizzato" >
+            <input class="form-check-input" type="radio" name="TipologiaImpiantoTermico" id="Centralizzato" value="Centralizzato">
             <label class="form-check-label" for="Centralizzato">
               Centralizzato
             </label>
@@ -839,7 +839,7 @@
         <div class="col-3 mx-auto text-start">
           <!--contenuto-->
           <div class="input-group input-group-dynamic mb-4">
-            <input class="form-control" aria-label="" placeholder="Inserisci" type="text" id="differenza_estiviinvernali" >
+            <input  aria-label="" placeholder="Inserisci" type="text" id="differenza_estiviinvernali" class="form-control" value="">
           </div>
           <!--contenuto-->
         </div>
@@ -881,21 +881,21 @@
           </tr>
           <tr style="border:1px solid black; border-collapse: collapse">
             <td style="border:1px solid black; border-collapse: collapse">Soffitto</td>
-            <td style="border:1px solid black; border-collapse: collapse"><input style="width:95%" type="number" min="0" class="form-control" id="soffittoPuntiLuce" required></td>
-            <td style="border:1px solid black; border-collapse: collapse"><input style="width:97%" type="number" min="0" class="form-control"  id="soffittoPotenzaMedia" required></td>
-            <td style="border:1px solid black; border-collapse: collapse"><input style="width:97%" type="number" min="0" class="form-control"  id="soffittoOreAccensione" required></td>
+            <td style="border:1px solid black; border-collapse: collapse"><input style="width:95%" class="form-control" type="number" value="" min="0"  id="soffittoPuntiLuce" required></td>
+            <td style="border:1px solid black; border-collapse: collapse"><input style="width:97%" class="form-control" type="number" value="" min="0"   id="soffittoPotenzaMedia" required></td>
+            <td style="border:1px solid black; border-collapse: collapse"><input style="width:97%" class="form-control" type="number" value="" min="0"   id="soffittoOreAccensione" required></td>
           </tr>
           <tr style="border:1px solid black; border-collapse: collapse">
             <td style="border:1px solid black; border-collapse: collapse">Pavimento</td>
-            <td style="border:1px solid black; border-collapse: collapse"><input style="width:95%" type="number" min="0" class="form-control" id="pavimentoPuntiLuce" required></td>
-            <td style="border:1px solid black; border-collapse: collapse"><input style="width:97%" type="number" min="0" class="form-control" id="pavimentoPotenzaMedia" required></td>
-            <td style="border:1px solid black; border-collapse: collapse"><input style="width:97%" type="number" min="0" class="form-control" id="pavimentoOreAccensione" required></td>
+            <td style="border:1px solid black; border-collapse: collapse"><input style="width:95%" class="form-control" type="number" value="" min="0"  id="pavimentoPuntiLuce" required></td>
+            <td style="border:1px solid black; border-collapse: collapse"><input style="width:97%" class="form-control" type="number" value="" min="0"  id="pavimentoPotenzaMedia" required></td>
+            <td style="border:1px solid black; border-collapse: collapse"><input style="width:97%" class="form-control" type="number" value="" min="0"  id="pavimentoOreAccensione" required></td>
           </tr>
           <tr style="border:1px solid black; border-collapse: collapse">
             <td style="border:1px solid black; border-collapse: collapse">Comodino/scrivania</td>
-            <td style="border:1px solid black; border-collapse: collapse"><input style="width:95%" type="number" min="0" class="form-control" id="comodinoPuntiLuce" required></td>
-            <td style="border:1px solid black; border-collapse: collapse"><input style="width:97%" type="number" min="0"class="form-control" id="comodinoPotenzaMedia" required></td>
-            <td style="border:1px solid black; border-collapse: collapse"><input style="width:97%" type="number" min="0" class="form-control" id="comodinoOreAccensione" required></td>
+            <td style="border:1px solid black; border-collapse: collapse"><input style="width:95%" class="form-control" type="number" value="" min="0"  id="comodinoPuntiLuce" required></td>
+            <td style="border:1px solid black; border-collapse: collapse"><input style="width:97%" class="form-control" type="number" value="" min="0"class="form-control" id="comodinoPotenzaMedia" required></td>
+            <td style="border:1px solid black; border-collapse: collapse"><input style="width:97%" class="form-control" type="number" value="" min="0" class="form-control" id="comodinoOreAccensione" required></td>
           </tr>
           
         </table>
@@ -936,94 +936,94 @@
           </tr>
           <tr style="border:1px solid black; border-collapse: collapse">
             <td style="border:1px solid black; border-collapse: collapse">Soffitto</td>
-            <td style="border:1px solid black; border-collapse: collapse"><input min="0" type="number" class="form-control" id="soffittoApparecchi" required></td>
-            <td style="border:1px solid black; border-collapse: collapse"><input min="0" type="number" class="form-control" id="soffittoAnnoAcquisto" required></td>
-            <td style="border:1px solid black; border-collapse: collapse"><input min="0" style="width:95%" type="number" class="form-control" id="soffittoClasseEnergetica" required></td>
-            <td style="border:1px solid black; border-collapse: collapse"><input min="0" style="width:97%" type="number" class="form-control" id="soffittoFunzionamento" required></td>
+            <td style="border:1px solid black; border-collapse: collapse"><input min="0" type="number" value="" class="form-control" id="soffittoApparecchi" required></td>
+            <td style="border:1px solid black; border-collapse: collapse"><input min="0" type="number" value="" class="form-control" id="soffittoAnnoAcquisto" required></td>
+            <td style="border:1px solid black; border-collapse: collapse"><input min="0" style="width:95%" type="number" value="" class="form-control" id="soffittoClasseEnergetica" required></td>
+            <td style="border:1px solid black; border-collapse: collapse"><input min="0" style="width:97%" type="number" value="" class="form-control" id="soffittoFunzionamento" required></td>
           </tr>
           <tr style="border:1px solid black; border-collapse: collapse">
             <td style="border:1px solid black; border-collapse: collapse">Scaldabagno</td>
-            <td style="border:1px solid black; border-collapse: collapse"><input min="0" type="number" class="form-control" id="scaldabagnoApparecchi" required></td>
-            <td style="border:1px solid black; border-collapse: collapse"><input min="0" type="number" class="form-control" id="scaldabagnoAnnoAcquisto" required></td>
-            <td style="border:1px solid black; border-collapse: collapse"><input min="0" style="width:95%" type="number" class="form-control" id="scaldabagnoClasseenergetica" required></td>
-            <td style="border:1px solid black; border-collapse: collapse"><input min="0" style="width:97%" type="number" class="form-control" id="scaldabagnoFunzionamento" required></td>
+            <td style="border:1px solid black; border-collapse: collapse"><input min="0" type="number" value="" class="form-control" id="scaldabagnoApparecchi" required></td>
+            <td style="border:1px solid black; border-collapse: collapse"><input min="0" type="number" value="" class="form-control" id="scaldabagnoAnnoAcquisto" required></td>
+            <td style="border:1px solid black; border-collapse: collapse"><input min="0" style="width:95%" type="number" value="" class="form-control" id="scaldabagnoClasseenergetica" required></td>
+            <td style="border:1px solid black; border-collapse: collapse"><input min="0" style="width:97%" type="number" value="" class="form-control" id="scaldabagnoFunzionamento" required></td>
           </tr>
           <tr style="border:1px solid black; border-collapse: collapse">
             <td style="border:1px solid black; border-collapse: collapse">Lavatrice</td>
-            <td style="border:1px solid black; border-collapse: collapse"><input min="0" type="number" class="form-control" id="lavatriceApparecchi" required></td>
-            <td style="border:1px solid black; border-collapse: collapse"><input min="0" type="number" class="form-control" id="lavatriceAnnoAcquisto" required></td>
-            <td style="border:1px solid black; border-collapse: collapse"><input min="0" style="width:95%" type="number" class="form-control" id="lavatriceClasseEnergetica" required></td>
-            <td style="border:1px solid black; border-collapse: collapse"><input min="0" style="width:97%" type="number" class="form-control" id="lavatriceFunzionamento" required></td>
+            <td style="border:1px solid black; border-collapse: collapse"><input min="0" type="number" value="" class="form-control" id="lavatriceApparecchi" required></td>
+            <td style="border:1px solid black; border-collapse: collapse"><input min="0" type="number" value="" class="form-control" id="lavatriceAnnoAcquisto" required></td>
+            <td style="border:1px solid black; border-collapse: collapse"><input min="0" style="width:95%" type="number" value="" class="form-control" id="lavatriceClasseEnergetica" required></td>
+            <td style="border:1px solid black; border-collapse: collapse"><input min="0" style="width:97%" type="number" value="" class="form-control" id="lavatriceFunzionamento" required></td>
           </tr>
           <tr style="border:1px solid black; border-collapse: collapse">
             <td style="border:1px solid black; border-collapse: collapse">Asciugatrice</td>
-            <td style="border:1px solid black; border-collapse: collapse"><input min="0" type="number" class="form-control" id="asciugatriceApparecchi" required></td>
-            <td style="border:1px solid black; border-collapse: collapse"><input min="0" type="number" class="form-control" id="asciugatriceAnnoAcquisto" required></td>
-            <td style="border:1px solid black; border-collapse: collapse"><input min="0" style="width:95%" type="number" class="form-control" id="asciugatriceClasseEnergetica" required></td>
-            <td style="border:1px solid black; border-collapse: collapse"><input min="0" style="width:97%" type="number" class="form-control" id="asciugatricePunzionamento" required></td>
+            <td style="border:1px solid black; border-collapse: collapse"><input min="0" type="number" value="" class="form-control" id="asciugatriceApparecchi" required></td>
+            <td style="border:1px solid black; border-collapse: collapse"><input min="0" type="number" value="" class="form-control" id="asciugatriceAnnoAcquisto" required></td>
+            <td style="border:1px solid black; border-collapse: collapse"><input min="0" style="width:95%" type="number" value="" class="form-control" id="asciugatriceClasseEnergetica" required></td>
+            <td style="border:1px solid black; border-collapse: collapse"><input min="0" style="width:97%" type="number" value="" class="form-control" id="asciugatricePunzionamento" required></td>
           </tr>
           <tr style="border:1px solid black; border-collapse: collapse">
             <td style="border:1px solid black; border-collapse: collapse">Frigorifero</td>
-            <td style="border:1px solid black; border-collapse: collapse"><input min="0" type="number" class="form-control" id="frigoriferoApparecchi" required></td>
-            <td style="border:1px solid black; border-collapse: collapse"><input min="0" type="number" class="form-control" id="frigoriferoAnnoAcquisto" required></td>
-            <td style="border:1px solid black; border-collapse: collapse"><input min="0" style="width:95%" type="number" class="form-control" id="frigoriferoClasseEnergetica" required></td>
-            <td style="border:1px solid black; border-collapse: collapse"><input min="0" style="width:97%" type="number" class="form-control" id="frigoriferoPunzionamento" required></td>
+            <td style="border:1px solid black; border-collapse: collapse"><input min="0" type="number" value="" class="form-control" id="frigoriferoApparecchi" required></td>
+            <td style="border:1px solid black; border-collapse: collapse"><input min="0" type="number" value="" class="form-control" id="frigoriferoAnnoAcquisto" required></td>
+            <td style="border:1px solid black; border-collapse: collapse"><input min="0" style="width:95%" type="number" value="" class="form-control" id="frigoriferoClasseEnergetica" required></td>
+            <td style="border:1px solid black; border-collapse: collapse"><input min="0" style="width:97%" type="number" value="" class="form-control" id="frigoriferoPunzionamento" required></td>
           </tr>
           <tr style="border:1px solid black; border-collapse: collapse">
             <td style="border:1px solid black; border-collapse: collapse">Lavastoviglie</td>
-            <td style="border:1px solid black; border-collapse: collapse"><input min="0" type="number" class="form-control" id="lavastoviglieApparecchi" required></td>
-            <td style="border:1px solid black; border-collapse: collapse"><input min="0" type="number" class="form-control" id="lavastoviglieAnnoAcquisto"  required></td>
-            <td style="border:1px solid black; border-collapse: collapse"><input min="0" style="width:95%" type="number" class="form-control" id="lavastoviglieClasseEnergetica" required></td>
-            <td style="border:1px solid black; border-collapse: collapse"><input min="0" style="width:97%" type="number" class="form-control" id="lavastovigliePunzionamento" required></td>
+            <td style="border:1px solid black; border-collapse: collapse"><input min="0" type="number" value="" class="form-control" id="lavastoviglieApparecchi" required></td>
+            <td style="border:1px solid black; border-collapse: collapse"><input min="0" type="number" value="" class="form-control" id="lavastoviglieAnnoAcquisto"  required></td>
+            <td style="border:1px solid black; border-collapse: collapse"><input min="0" style="width:95%" type="number" value="" class="form-control" id="lavastoviglieClasseEnergetica" required></td>
+            <td style="border:1px solid black; border-collapse: collapse"><input min="0" style="width:97%" type="number" value="" class="form-control" id="lavastovigliePunzionamento" required></td>
           </tr>
           <tr style="border:1px solid black; border-collapse: collapse">
             <td style="border:1px solid black; border-collapse: collapse">Forno</td>
-            <td style="border:1px solid black; border-collapse: collapse"><input min="0" type="number" class="form-control" id="fornoApparecchi" required></td>
-            <td style="border:1px solid black; border-collapse: collapse"><input min="0" type="number" class="form-control" id="fornoAnnoAcquisto" required></td>
-            <td style="border:1px solid black; border-collapse: collapse"><input min="0" style="width:95%" type="number" class="form-control" id="fornoClasseEnergetica" required></td>
-            <td style="border:1px solid black; border-collapse: collapse"><input min="0" style="width:97%" type="number" class="form-control" id="fornoFunzionamento"  required></td>
+            <td style="border:1px solid black; border-collapse: collapse"><input min="0" type="number" value="" class="form-control" id="fornoApparecchi" required></td>
+            <td style="border:1px solid black; border-collapse: collapse"><input min="0" type="number" value="" class="form-control" id="fornoAnnoAcquisto" required></td>
+            <td style="border:1px solid black; border-collapse: collapse"><input min="0" style="width:95%" type="number" value="" class="form-control" id="fornoClasseEnergetica" required></td>
+            <td style="border:1px solid black; border-collapse: collapse"><input min="0" style="width:97%" type="number" value="" class="form-control" id="fornoFunzionamento"  required></td>
           </tr>
           <tr style="border:1px solid black; border-collapse: collapse">
             <td style="border:1px solid black; border-collapse: collapse">Condizionatore</td>
-            <td style="border:1px solid black; border-collapse: collapse"><input min="0" type="number" class="form-control" id="codnizionatoreApparecchi" required></td>
-            <td style="border:1px solid black; border-collapse: collapse"><input min="0" type="number" class="form-control" id="condizionatoreAnnoAcquisto" required></td>
-            <td style="border:1px solid black; border-collapse: collapse"><input min="0" style="width:95%" type="number" class="form-control" id="condizionatoreClasseEnergetica" required></td>
-            <td style="border:1px solid black; border-collapse: collapse"><input min="0" style="width:97%" type="number" class="form-control" id="condizionatoreFunzionamento" required></td>
+            <td style="border:1px solid black; border-collapse: collapse"><input min="0" type="number" value="" class="form-control" id="codnizionatoreApparecchi" required></td>
+            <td style="border:1px solid black; border-collapse: collapse"><input min="0" type="number" value="" class="form-control" id="condizionatoreAnnoAcquisto" required></td>
+            <td style="border:1px solid black; border-collapse: collapse"><input min="0" style="width:95%" type="number" value="" class="form-control" id="condizionatoreClasseEnergetica" required></td>
+            <td style="border:1px solid black; border-collapse: collapse"><input min="0" style="width:97%" type="number" value="" class="form-control" id="condizionatoreFunzionamento" required></td>
           </tr>
           <tr style="border:1px solid black; border-collapse: collapse">
             <td style="border:1px solid black; border-collapse: collapse">TV</td>
-            <td style="border:1px solid black; border-collapse: collapse"><input min="0" type="number" class="form-control" id="TVApparecchi" required></td>
-            <td style="border:1px solid black; border-collapse: collapse"><input min="0" type="number" class="form-control" id="TVAnnoAcquisto" required></td>
-            <td style="border:1px solid black; border-collapse: collapse"><input min="0" style="width:95%" type="number" class="form-control" id="TVClasseEnergetica" required></td>
-            <td style="border:1px solid black; border-collapse: collapse"><input min="0" style="width:97%" type="number" class="form-control" id="TVFunzionamento" required></td>
+            <td style="border:1px solid black; border-collapse: collapse"><input min="0" type="number" value="" class="form-control" id="TVApparecchi" required></td>
+            <td style="border:1px solid black; border-collapse: collapse"><input min="0" type="number" value="" class="form-control" id="TVAnnoAcquisto" required></td>
+            <td style="border:1px solid black; border-collapse: collapse"><input min="0" style="width:95%" type="number" value="" class="form-control" id="TVClasseEnergetica" required></td>
+            <td style="border:1px solid black; border-collapse: collapse"><input min="0" style="width:97%" type="number" value="" class="form-control" id="TVFunzionamento" required></td>
           </tr>
           <tr style="border:1px solid black; border-collapse: collapse">
             <td style="border:1px solid black; border-collapse: collapse">Decoder</td>
-            <td style="border:1px solid black; border-collapse: collapse"><input min="0" type="number" class="form-control" id="decoderApparecchi" required></td>
-            <td style="border:1px solid black; border-collapse: collapse"><input min="0" type="number" class="form-control" id="decoderAnnoAcquisto" required></td>
-            <td style="border:1px solid black; border-collapse: collapse"><input min="0" style="width:95%" type="number" class="form-control" id="decoderClasseEnergetica" required></td>
-            <td style="border:1px solid black; border-collapse: collapse"><input min="0" style="width:97%" type="number" class="form-control" id="decoderFunzionamento" required></td>
+            <td style="border:1px solid black; border-collapse: collapse"><input min="0" type="number" value="" class="form-control" id="decoderApparecchi" required></td>
+            <td style="border:1px solid black; border-collapse: collapse"><input min="0" type="number" value="" class="form-control" id="decoderAnnoAcquisto" required></td>
+            <td style="border:1px solid black; border-collapse: collapse"><input min="0" style="width:95%" type="number" value="" class="form-control" id="decoderClasseEnergetica" required></td>
+            <td style="border:1px solid black; border-collapse: collapse"><input min="0" style="width:97%" type="number" value="" class="form-control" id="decoderFunzionamento" required></td>
           </tr>
           <tr style="border:1px solid black; border-collapse: collapse">
             <td style="border:1px solid black; border-collapse: collapse">Impianto stereo</td>
-            <td style="border:1px solid black; border-collapse: collapse"><input min="0" type="number" class="form-control" id="stereoApparecchi" required></td>
-            <td style="border:1px solid black; border-collapse: collapse"><input min="0" type="number" class="form-control" id="stereoAnnoAcquisto" required></td>
-            <td style="border:1px solid black; border-collapse: collapse"><input min="0" style="width:95%" type="number" class="form-control" id="stereoClasseEnergetica" required></td>
-            <td style="border:1px solid black; border-collapse: collapse"><input min="0" style="width:97%" type="number" class="form-control" id="stereoFunzionamento" required></td>
+            <td style="border:1px solid black; border-collapse: collapse"><input min="0" type="number" value="" class="form-control" id="stereoApparecchi" required></td>
+            <td style="border:1px solid black; border-collapse: collapse"><input min="0" type="number" value="" class="form-control" id="stereoAnnoAcquisto" required></td>
+            <td style="border:1px solid black; border-collapse: collapse"><input min="0" style="width:95%" type="number" value="" class="form-control" id="stereoClasseEnergetica" required></td>
+            <td style="border:1px solid black; border-collapse: collapse"><input min="0" style="width:97%" type="number" value="" class="form-control" id="stereoFunzionamento" required></td>
           </tr>
           <tr style="border:1px solid black; border-collapse: collapse">
             <td style="border:1px solid black; border-collapse: collapse">Wi-fi</td>
-            <td style="border:1px solid black; border-collapse: collapse"><input min="0" type="number" class="form-control" id="wifiApparecchi" required></td>
-            <td style="border:1px solid black; border-collapse: collapse"><input min="0" type="number" class="form-control" id="wifiAnnoAcquisto" required></td>
-            <td style="border:1px solid black; border-collapse: collapse"><input min="0" style="width:95%" type="number" class="form-control" id="wifiClasseEnergetica" required></td>
-            <td style="border:1px solid black; border-collapse: collapse"><input min="0" style="width:97%" type="number" class="form-control" id="wifiunzionamento" required></td>
+            <td style="border:1px solid black; border-collapse: collapse"><input min="0" type="number" value="" class="form-control" id="wifiApparecchi" required></td>
+            <td style="border:1px solid black; border-collapse: collapse"><input min="0" type="number" value="" class="form-control" id="wifiAnnoAcquisto" required></td>
+            <td style="border:1px solid black; border-collapse: collapse"><input min="0" style="width:95%" type="number" value="" class="form-control" id="wifiClasseEnergetica" required></td>
+            <td style="border:1px solid black; border-collapse: collapse"><input min="0" style="width:97%" type="number" value="" class="form-control" id="wifiunzionamento" required></td>
           </tr>
           <tr style="border:1px solid black; border-collapse: collapse">
             <td style="border:1px solid black; border-collapse: collapse">Console</td>
-            <td style="border:1px solid black; border-collapse: collapse"><input min="0" type="number" class="form-control" id="consoleApparecchi" required></td>
-            <td style="border:1px solid black; border-collapse: collapse"><input min="0" type="number" class="form-control" id="consoleAnnoAcquisto" required></td>
-            <td style="border:1px solid black; border-collapse: collapse"><input min="0" style="width:95%"type="number" class="form-control" id="consoleClasseEnergetica" required></td>
-            <td style="border:1px solid black; border-collapse: collapse"><input min="0" style="width:97%" type="number" class="form-control" id="consoleFunzionamento" required></td>
+            <td style="border:1px solid black; border-collapse: collapse"><input min="0" type="number" value="" class="form-control" id="consoleApparecchi" required></td>
+            <td style="border:1px solid black; border-collapse: collapse"><input min="0" type="number" value="" class="form-control" id="consoleAnnoAcquisto" required></td>
+            <td style="border:1px solid black; border-collapse: collapse"><input min="0" style="width:95%"type="number" value="" class="form-control" id="consoleClasseEnergetica" required></td>
+            <td style="border:1px solid black; border-collapse: collapse"><input min="0" style="width:97%" type="number" value="" class="form-control" id="consoleFunzionamento" required></td>
           </tr>
           
         </table>
@@ -1348,7 +1348,7 @@
         <div class="col-3 mx-auto text-start">
           <!--contenuto-->
           <div class="input-group input-group-dynamic mb-4">
-            <input class="form-control" aria-label="" placeholder="Inserisci" type="text" id="tipologiaStrada" required>
+            <input class="form-control" aria-label="" placeholder="Inserisci" type="text" id="tipologiaStrada" value="" required>
           </div>
           <!--contenuto-->
         </div>
@@ -1392,7 +1392,7 @@
           <div class="col-3 mx-auto text-start">
             <!--contenuto-->
             <div class="input-group input-group-dynamic mb-4">
-              <input class="form-control" aria-label="" placeholder="Inserisci" type="text" id="tipologiaLocali" required>
+              <input class="form-control" aria-label="" placeholder="Inserisci" type="text" id="tipologiaLocali" value="" required>
             </div>
             <!--contenuto-->
           </div>
@@ -1802,22 +1802,22 @@
           <tr style="border:1px solid black; border-collapse: collapse">
             <td style="border:1px solid black; border-collapse: collapse">Locale caldaia</td>
             <td style="border:1px solid black; border-collapse: collapse"><input style="width:95%" type="radio" value="Sì" name="LocaleCaldaia" id="LocaleCaldaiaSi" class="form-control"  required></td>
-            <td style="border:1px solid black; border-collapse: collapse"><input style="width:97%" type="radio" value="No" name="LocaleCaldaia" id="LocaleCaldaiaNo" class="form-control"  required></td>
+            <td style="border:1px solid black; border-collapse: collapse"><input style="width:97%" type="radio" value="No" name="LocaleCaldaia" id="LocaleCaldaiaNo"   required></td>
           </tr>
           <tr style="border:1px solid black; border-collapse: collapse">
             <td style="border:1px solid black; border-collapse: collapse">Locali del custode</td>
-            <td style="border:1px solid black; border-collapse: collapse"><input style="width:95%" type="radio" value="Sì" name="LocaleCustode" id="LocaleCustodeSi" class="form-control"  required></td>
-            <td style="border:1px solid black; border-collapse: collapse"><input style="width:97%" type="radio" value="No" name="LocaleCustode" id="LocaleCustodeNo" class="form-control"  required></td>
+            <td style="border:1px solid black; border-collapse: collapse"><input style="width:95%" type="radio" value="Sì" name="LocaleCustode" id="LocaleCustodeSi"   required></td>
+            <td style="border:1px solid black; border-collapse: collapse"><input style="width:97%" type="radio" value="No" name="LocaleCustode" id="LocaleCustodeNo"   required></td>
           </tr>
           <tr style="border:1px solid black; border-collapse: collapse">
             <td style="border:1px solid black; border-collapse: collapse">Sottotetto o soffitta</td>
-            <td style="border:1px solid black; border-collapse: collapse"><input style="width:95%" type="radio" value="Sì" name="SottoTettoSoffitta" id="SottoTettoSoffittaSi" class="form-control"  required></td>
-            <td style="border:1px solid black; border-collapse: collapse"><input style="width:97%" type="radio" value="No" name="SottoTettoSoffitta" id="SottoTettoSoffittaNo" class="form-control"  required></td>
+            <td style="border:1px solid black; border-collapse: collapse"><input style="width:95%" type="radio" value="Sì" name="SottoTettoSoffitta" id="SottoTettoSoffittaSi"   required></td>
+            <td style="border:1px solid black; border-collapse: collapse"><input style="width:97%" type="radio" value="No" name="SottoTettoSoffitta" id="SottoTettoSoffittaNo"   required></td>
           </tr>
           <tr style="border:1px solid black; border-collapse: collapse">
             <td style="border:1px solid black; border-collapse: collapse">Tetto piano condominiale</td>
-            <td style="border:1px solid black; border-collapse: collapse"><input style="width:95%" type="radio" value="Sì" name="TettoPianoCondominiale" id="TettoPianoCondominialeSi" class="form-control"  required></td>
-            <td style="border:1px solid black; border-collapse: collapse"><input style="width:97%" type="radio" value="No" name="TettoPianoCondominiale" id="TettoPianoCondominialeNo" class="form-control"  required></td>
+            <td style="border:1px solid black; border-collapse: collapse"><input style="width:95%" type="radio" value="Sì" name="TettoPianoCondominiale" id="TettoPianoCondominialeSi"   required></td>
+            <td style="border:1px solid black; border-collapse: collapse"><input style="width:97%" type="radio" value="No" name="TettoPianoCondominiale" id="TettoPianoCondominialeNo"   required></td>
           </tr>
     
         </table>
@@ -1858,57 +1858,57 @@
           </tr>
           <tr style="border:1px solid black; border-collapse: collapse; ">
             <td style="border:1px solid black; border-collapse: collapse">Bricolage, officina bici</td>
-            <td style="border:1px solid black; border-collapse: collapse"><input style="width:95%" type="radio" value="Sì" class="form-control" name="BricolageOfficinaBici" id="BricolageOfficinaBiciSi" required></td>
-            <td style="border:1px solid black; border-collapse: collapse"><input style="width:97%" type="radio" value="No" class="form-control" name="BricolageOfficinaBici" id="BricolageOfficinaBiciNo" required></td>
+            <td style="border:1px solid black; border-collapse: collapse"><input style="width:95%" type="radio" value="Sì"  name="BricolageOfficinaBici" id="BricolageOfficinaBiciSi" required></td>
+            <td style="border:1px solid black; border-collapse: collapse"><input style="width:97%" type="radio" value="No"  name="BricolageOfficinaBici" id="BricolageOfficinaBiciNo" required></td>
             <td style="border:1px solid black; border-collapse: collapse">Distributore acqua fresca, frizzante e non</td>
-            <td style="border:1px solid black; border-collapse: collapse"><input style="width:95%" type="radio" value="Sì" class="form-control" name="DistirbutoreAcqua" id="DistirbutoreAcquaSi" required></td>
-            <td style="border:1px solid black; border-collapse: collapse"><input style="width:97%" type="radio" value="No" class="form-control" name="DistirbutoreAcqua" id="DistirbutoreAcquaNo" required></td>
+            <td style="border:1px solid black; border-collapse: collapse"><input style="width:95%" type="radio" value="Sì"  name="DistirbutoreAcqua" id="DistirbutoreAcquaSi" required></td>
+            <td style="border:1px solid black; border-collapse: collapse"><input style="width:97%" type="radio" value="No"  name="DistirbutoreAcqua" id="DistirbutoreAcquaNo" required></td>
 
           </tr>
           <tr style="border:1px solid black; border-collapse: collapse">
             <td style="border:1px solid black; border-collapse: collapse">Cantina a temperatura per vini</td>
-            <td style="border:1px solid black; border-collapse: collapse"><input style="width:95%" type="radio" value="Sì" class="form-control" name="CantinaPerVini" id="CantinaPerViniSi" required></td>
-            <td style="border:1px solid black; border-collapse: collapse"><input style="width:97%" type="radio" value="No" class="form-control" name="CantinaPerVini" id="CantinaPerViniNo" required></td>
+            <td style="border:1px solid black; border-collapse: collapse"><input style="width:95%" type="radio" value="Sì"  name="CantinaPerVini" id="CantinaPerViniSi" required></td>
+            <td style="border:1px solid black; border-collapse: collapse"><input style="width:97%" type="radio" value="No"  name="CantinaPerVini" id="CantinaPerViniNo" required></td>
             <td style="border:1px solid black; border-collapse: collapse">Wi-Fi condominiale</td>
-            <td style="border:1px solid black; border-collapse: collapse"><input style="width:95%" type="radio" value="Sì" class="form-control" name="WifiCondominiale" id="WifiCondominialeSi" required></td>
-            <td style="border:1px solid black; border-collapse: collapse"><input style="width:97%" type="radio" value="No" class="form-control" name="WifiCondominiale" id="WifiCondominialeNo" required></td>
+            <td style="border:1px solid black; border-collapse: collapse"><input style="width:95%" type="radio" value="Sì"  name="WifiCondominiale" id="WifiCondominialeSi" required></td>
+            <td style="border:1px solid black; border-collapse: collapse"><input style="width:97%" type="radio" value="No"  name="WifiCondominiale" id="WifiCondominialeNo" required></td>
           </tr>
           <tr style="border:1px solid black; border-collapse: collapse">
             <td style="border:1px solid black; border-collapse: collapse">Cucina con grande tavolo</td>
-            <td style="border:1px solid black; border-collapse: collapse"><input style="width:95%" type="radio" value="Sì" class="form-control" name="CucinaGrandeTavolo" id="CucinaGrandeTavoloSi" required></td>
-            <td style="border:1px solid black; border-collapse: collapse"><input style="width:97%" type="radio" value="No" class="form-control" name="CucinaGrandeTavolo" id="CucinaGrandeTavoloNo" required></td>
+            <td style="border:1px solid black; border-collapse: collapse"><input style="width:95%" type="radio" value="Sì"  name="CucinaGrandeTavolo" id="CucinaGrandeTavoloSi" required></td>
+            <td style="border:1px solid black; border-collapse: collapse"><input style="width:97%" type="radio" value="No"  name="CucinaGrandeTavolo" id="CucinaGrandeTavoloNo" required></td>
             <td style="border:1px solid black; border-collapse: collapse">Locale giochi per bambini</td>
-            <td style="border:1px solid black; border-collapse: collapse"><input style="width:95%" type="radio" value="Sì" class="form-control" name="LocalePerBambini" id="LocalePerBambiniSi" required></td>
-            <td style="border:1px solid black; border-collapse: collapse"><input style="width:97%" type="radio" value="No" class="form-control" name="LocalePerBambini" id="LocalePerBambiniNo" required></td>
+            <td style="border:1px solid black; border-collapse: collapse"><input style="width:95%" type="radio" value="Sì"  name="LocalePerBambini" id="LocalePerBambiniSi" required></td>
+            <td style="border:1px solid black; border-collapse: collapse"><input style="width:97%" type="radio" value="No"  name="LocalePerBambini" id="LocalePerBambiniNo" required></td>
           </tr>
           <tr style="border:1px solid black; border-collapse: collapse">
             <td style="border:1px solid black; border-collapse: collapse">Deposito gruppo acquisto con frigo e freezer</td>
-            <td style="border:1px solid black; border-collapse: collapse"><input style="width:95%" type="radio" value="Sì" class="form-control" name="DepositoFrigoFreezer" id="DepositoFrigoFreezerSi" required></td>
-            <td style="border:1px solid black; border-collapse: collapse"><input style="width:97%" type="radio" value="No" class="form-control" name="DepositoFrigoFreezer" id="DepositoFrigoFreezerNo" required></td>
+            <td style="border:1px solid black; border-collapse: collapse"><input style="width:95%" type="radio" value="Sì"  name="DepositoFrigoFreezer" id="DepositoFrigoFreezerSi" required></td>
+            <td style="border:1px solid black; border-collapse: collapse"><input style="width:97%" type="radio" value="No"  name="DepositoFrigoFreezer" id="DepositoFrigoFreezerNo" required></td>
             <td style="border:1px solid black; border-collapse: collapse">Palestra, attrezzi sportivi</td>
-            <td style="border:1px solid black; border-collapse: collapse"><input style="width:95%" type="radio" value="Sì" class="form-control" name="PalestraAttrezziSportivi" id="PalestraAttrezziSportiviSi" required></td>
-            <td style="border:1px solid black; border-collapse: collapse"><input style="width:97%" type="radio" value="No" class="form-control" name="PalestraAttrezziSportivi" id="PalestraAttrezziSportiviNo" required></td>
+            <td style="border:1px solid black; border-collapse: collapse"><input style="width:95%" type="radio" value="Sì"  name="PalestraAttrezziSportivi" id="PalestraAttrezziSportiviSi" required></td>
+            <td style="border:1px solid black; border-collapse: collapse"><input style="width:97%" type="radio" value="No"  name="PalestraAttrezziSportivi" id="PalestraAttrezziSportiviNo" required></td>
           </tr>
           <tr style="border:1px solid black; border-collapse: collapse">
             <td style="border:1px solid black; border-collapse: collapse">Deposito oggetti o beni da prestare</td>
-            <td style="border:1px solid black; border-collapse: collapse"><input style="width:95%" type="radio" value="Sì" class="form-control" name="DepositoOggettiBeni" id="DepositoOggettiBeniSi" required></td>
-            <td style="border:1px solid black; border-collapse: collapse"><input style="width:97%" type="radio" value="No" class="form-control" name="DepositoOggettiBeni" id="DepositoOggettiBeniNo" required></td>
+            <td style="border:1px solid black; border-collapse: collapse"><input style="width:95%" type="radio" value="Sì"  name="DepositoOggettiBeni" id="DepositoOggettiBeniSi" required></td>
+            <td style="border:1px solid black; border-collapse: collapse"><input style="width:97%" type="radio" value="No"  name="DepositoOggettiBeni" id="DepositoOggettiBeniNo" required></td>
             <td style="border:1px solid black; border-collapse: collapse">Sala cinema, home theater</td>
-            <td style="border:1px solid black; border-collapse: collapse"><input style="width:95%" type="radio" value="Sì" class="form-control" name="SaltaLetturaStudio" id="SaltaLetturaStudioSi" required></td>
-            <td style="border:1px solid black; border-collapse: collapse"><input style="width:97%" type="radio" value="No" class="form-control" name="SaltaLetturaStudio" id="SaltaLetturaStudioNo" required></td>
+            <td style="border:1px solid black; border-collapse: collapse"><input style="width:95%" type="radio" value="Sì"  name="SaltaLetturaStudio" id="SaltaLetturaStudioSi" required></td>
+            <td style="border:1px solid black; border-collapse: collapse"><input style="width:97%" type="radio" value="No"  name="SaltaLetturaStudio" id="SaltaLetturaStudioNo" required></td>
           </tr>
           <tr style="border:1px solid black; border-collapse: collapse">
             <td style="border:1px solid black; border-collapse: collapse">Sala lettura, studio</td>
-            <td style="border:1px solid black; border-collapse: collapse"><input style="width:95%" type="radio" value="Sì" class="form-control" name="SaltaLetturaStudio" id="SaltaLetturaStudioSi" required></td>
-            <td style="border:1px solid black; border-collapse: collapse"><input style="width:97%" type="radio" value="No" class="form-control" name="SaltaLetturaStudio" id="SaltaLetturaStudioNo" required></td>
+            <td style="border:1px solid black; border-collapse: collapse"><input style="width:95%" type="radio" value="Sì"  name="SaltaLetturaStudio" id="SaltaLetturaStudioSi" required></td>
+            <td style="border:1px solid black; border-collapse: collapse"><input style="width:97%" type="radio" value="No"  name="SaltaLetturaStudio" id="SaltaLetturaStudioNo" required></td>
             <td style="border:1px solid black; border-collapse: collapse">Serra o orto</td>
-            <td style="border:1px solid black; border-collapse: collapse"><input style="width:95%" type="radio" value="Sì" class="form-control" name="SerraOrto" id="SerraOrtoSi"  required></td>
-            <td style="border:1px solid black; border-collapse: collapse"><input style="width:97%" type="radio" value="No" class="form-control" name="SerraOrto" id="SerraOrtoNo" required></td>
+            <td style="border:1px solid black; border-collapse: collapse"><input style="width:95%" type="radio" value="Sì"  name="SerraOrto" id="SerraOrtoSi"  required></td>
+            <td style="border:1px solid black; border-collapse: collapse"><input style="width:97%" type="radio" value="No"  name="SerraOrto" id="SerraOrtoNo" required></td>
           </tr>
           <tr style="border:1px solid black; border-collapse: collapse">
             <td style="border:1px solid black; border-collapse: collapse">Stireria, lavanderia</td>
-            <td style="border:1px solid black; border-collapse: collapse"><input style="width:95%" type="radio" value="Sì" class="form-control" name="StireriaLavanderia" id="StireriaLavanderiaSi" required></td>
-            <td style="border:1px solid black; border-collapse: collapse"><input style="width:97%" type="radio" value="No" class="form-control" name="StireriaLavanderia" id="StireriaLavanderiaNo" required></td>
+            <td style="border:1px solid black; border-collapse: collapse"><input style="width:95%" type="radio" value="Sì"  name="StireriaLavanderia" id="StireriaLavanderiaSi" required></td>
+            <td style="border:1px solid black; border-collapse: collapse"><input style="width:97%" type="radio" value="No"  name="StireriaLavanderia" id="StireriaLavanderiaNo" required></td>
           </tr>
         </table>
 
@@ -1948,34 +1948,34 @@
           </tr>
           <tr style="border:1px solid black; border-collapse: collapse; ">
             <td style="border:1px solid black; border-collapse: collapse">Mobilità: auto, moto, bicicletta</td>
-            <td style="border:1px solid black; border-collapse: collapse"><input style="width:95%" type="radio" value="Sì" class="form-control" name="Mobilita" id="MobilitaSi" required></td>
-            <td style="border:1px solid black; border-collapse: collapse"><input style="width:97%" type="radio" value="No" class="form-control" name="Mobilita" id="MobilitaNo" required></td>
+            <td style="border:1px solid black; border-collapse: collapse"><input style="width:95%" type="radio" value="Sì"  name="Mobilita" id="MobilitaSi" required></td>
+            <td style="border:1px solid black; border-collapse: collapse"><input style="width:97%" type="radio" value="No"  name="Mobilita" id="MobilitaNo" required></td>
             <td style="border:1px solid black; border-collapse: collapse">Giochi per bambini, passeggini,...</td>
-            <td style="border:1px solid black; border-collapse: collapse"><input style="width:95%" type="radio" value="Sì" class="form-control" name="GiochiPasseggini" id="GiochiPassegginiSi" required></td>
-            <td style="border:1px solid black; border-collapse: collapse"><input style="width:97%" type="radio" value="No" class="form-control" name="GiochiPasseggini" id="GiochiPassegginiNo" required></td>
+            <td style="border:1px solid black; border-collapse: collapse"><input style="width:95%" type="radio" value="Sì"  name="GiochiPasseggini" id="GiochiPassegginiSi" required></td>
+            <td style="border:1px solid black; border-collapse: collapse"><input style="width:97%" type="radio" value="No"  name="GiochiPasseggini" id="GiochiPassegginiNo" required></td>
 
           </tr>
           <tr style="border:1px solid black; border-collapse: collapse">
             <td style="border:1px solid black; border-collapse: collapse">Libri, dischi, film</td>
-            <td style="border:1px solid black; border-collapse: collapse"><input style="width:95%" type="radio" value="Sì" class="form-control" name="LibriDischiFilm" id="LibriDischiFilmSi" required></td>
-            <td style="border:1px solid black; border-collapse: collapse"><input style="width:97%" type="radio" value="No" class="form-control" name="LibriDischiFilm" id="LibriDischiFilmNo" required></td>
+            <td style="border:1px solid black; border-collapse: collapse"><input style="width:95%" type="radio" value="Sì"  name="LibriDischiFilm" id="LibriDischiFilmSi" required></td>
+            <td style="border:1px solid black; border-collapse: collapse"><input style="width:97%" type="radio" value="No"  name="LibriDischiFilm" id="LibriDischiFilmNo" required></td>
             <td style="border:1px solid black; border-collapse: collapse">Pc, apparecchi per montaggi audio e video, materiali per feste(luci, audio, arredi,...)</td>
-            <td style="border:1px solid black; border-collapse: collapse"><input style="width:95%" type="radio" value="Sì" class="form-control" name="PCApparecchi" id="PCApparecchiSi"  required></td>
-            <td style="border:1px solid black; border-collapse: collapse"><input style="width:97%" type="radio" value="No" class="form-control" name="PCApparecchi" id="PCApparecchiNo"  required></td>
+            <td style="border:1px solid black; border-collapse: collapse"><input style="width:95%" type="radio" value="Sì"  name="PCApparecchi" id="PCApparecchiSi"  required></td>
+            <td style="border:1px solid black; border-collapse: collapse"><input style="width:97%" type="radio" value="No"  name="PCApparecchi" id="PCApparecchiNo"  required></td>
           </tr>
           <tr style="border:1px solid black; border-collapse: collapse">
             <td style="border:1px solid black; border-collapse: collapse">Utensili bricolage o per officina</td>
-            <td style="border:1px solid black; border-collapse: collapse"><input style="width:95%" type="radio" value="Sì" class="form-control" name="UtensiliBricolage" id="UtensiliBricolageSi" required></td>
-            <td style="border:1px solid black; border-collapse: collapse"><input style="width:97%" type="radio" value="No" class="form-control" name="UtensiliBricolage" id="UtensiliBricolageNo" required></td>
+            <td style="border:1px solid black; border-collapse: collapse"><input style="width:95%" type="radio" value="Sì"  name="UtensiliBricolage" id="UtensiliBricolageSi" required></td>
+            <td style="border:1px solid black; border-collapse: collapse"><input style="width:97%" type="radio" value="No"  name="UtensiliBricolage" id="UtensiliBricolageNo" required></td>
             <td style="border:1px solid black; border-collapse: collapse">Utensili cucina o per uso domestico</td>
-            <td style="border:1px solid black; border-collapse: collapse"><input style="width:95%" type="radio" value="Sì" class="form-control" name="UntensiliCucinaDomestico" id="UntensiliCucinaDomesticoSi" required></td>
-            <td style="border:1px solid black; border-collapse: collapse"><input style="width:97%" type="radio" value="No" class="form-control" name="UntensiliCucinaDomestico" id="UntensiliCucinaDomesticoNo" required></td>
+            <td style="border:1px solid black; border-collapse: collapse"><input style="width:95%" type="radio" value="Sì"  name="UntensiliCucinaDomestico" id="UntensiliCucinaDomesticoSi" required></td>
+            <td style="border:1px solid black; border-collapse: collapse"><input style="width:97%" type="radio" value="No"  name="UntensiliCucinaDomestico" id="UntensiliCucinaDomesticoNo" required></td>
           </tr>
 
           <tr style="border:1px solid black; border-collapse: collapse">
             <td style="border:1px solid black; border-collapse: collapse">Strumenti musicali</td>
-            <td style="border:1px solid black; border-collapse: collapse"><input style="width:95%" type="radio" value="Sì" class="form-control" name="StrumentiMusicali" id="StrumentiMusicaliSi" required></td>
-            <td style="border:1px solid black; border-collapse: collapse"><input style="width:97%" type="radio" value="No" class="form-control" name="StrimentiMusicali" id="StrumentiMusicaliNo" required></td>
+            <td style="border:1px solid black; border-collapse: collapse"><input style="width:95%" type="radio" value="Sì"  name="StrumentiMusicali" id="StrumentiMusicaliSi" required></td>
+            <td style="border:1px solid black; border-collapse: collapse"><input style="width:97%" type="radio" value="No"  name="StrimentiMusicali" id="StrumentiMusicaliNo" required></td>
           </tr>
           
         </table>
@@ -2016,34 +2016,34 @@
           </tr>
           <tr style="border:1px solid black; border-collapse: collapse; ">
             <td style="border:1px solid black; border-collapse: collapse">Aiuto per i compiti (studenti)</td>
-            <td style="border:1px solid black; border-collapse: collapse"><input style="width:95%" type="radio" value="Sì" class="form-control" name="AiutoCompiti" id="AiutoCompitiSi" required></td>
-            <td style="border:1px solid black; border-collapse: collapse"><input style="width:97%" type="radio" value="No" class="form-control" name="AiutoCompiti" id="AiutoCompitiNo" required></td>
+            <td style="border:1px solid black; border-collapse: collapse"><input style="width:95%" type="radio" value="Sì"  name="AiutoCompiti" id="AiutoCompitiSi" required></td>
+            <td style="border:1px solid black; border-collapse: collapse"><input style="width:97%" type="radio" value="No"  name="AiutoCompiti" id="AiutoCompitiNo" required></td>
             <td style="border:1px solid black; border-collapse: collapse">Piccole manutenzioni casalinghe</td>
-            <td style="border:1px solid black; border-collapse: collapse"><input style="width:95%" type="radio" value="Sì" class="form-control" name="PiccoleManutenzioni" id="PiccoleManutenzioniSi" required></td>
-            <td style="border:1px solid black; border-collapse: collapse"><input style="width:97%" type="radio" value="No" class="form-control" name="PiccoleManutenzioni" id="PiccoleManutenzioniNo" required></td>
+            <td style="border:1px solid black; border-collapse: collapse"><input style="width:95%" type="radio" value="Sì"  name="PiccoleManutenzioni" id="PiccoleManutenzioniSi" required></td>
+            <td style="border:1px solid black; border-collapse: collapse"><input style="width:97%" type="radio" value="No"  name="PiccoleManutenzioni" id="PiccoleManutenzioniNo" required></td>
 
           </tr>
           <tr style="border:1px solid black; border-collapse: collapse">
             <td style="border:1px solid black; border-collapse: collapse">Assistenza anziani e/o bambini</td>
-            <td style="border:1px solid black; border-collapse: collapse"><input style="width:95%" type="radio" value="Sì" class="form-control" name="AssistenzaAnzianiBambini" id="AssistenzaAnzianiBambiniSi" required></td>
-            <td style="border:1px solid black; border-collapse: collapse"><input style="width:97%" type="radio" value="No" class="form-control" name="AssistenzaAnzianiBambini" id="AssistenzaAnzianiBambiniNo" required></td>
+            <td style="border:1px solid black; border-collapse: collapse"><input style="width:95%" type="radio" value="Sì"  name="AssistenzaAnzianiBambini" id="AssistenzaAnzianiBambiniSi" required></td>
+            <td style="border:1px solid black; border-collapse: collapse"><input style="width:97%" type="radio" value="No"  name="AssistenzaAnzianiBambini" id="AssistenzaAnzianiBambiniNo" required></td>
             <td style="border:1px solid black; border-collapse: collapse">Prima consulenza professionale</td>
-            <td style="border:1px solid black; border-collapse: collapse"><input style="width:95%" type="radio" value="Sì" class="form-control" name="PrimaConsulenza" id="PrimaConsulenzaSi" required></td>
-            <td style="border:1px solid black; border-collapse: collapse"><input style="width:97%" type="radio" value="No" class="form-control" name="PrimaConsulenza" id="PrimaConsulenzaNo" required></td>
+            <td style="border:1px solid black; border-collapse: collapse"><input style="width:95%" type="radio" value="Sì"  name="PrimaConsulenza" id="PrimaConsulenzaSi" required></td>
+            <td style="border:1px solid black; border-collapse: collapse"><input style="width:97%" type="radio" value="No"  name="PrimaConsulenza" id="PrimaConsulenzaNo" required></td>
           </tr>
           <tr style="border:1px solid black; border-collapse: collapse">
             <td style="border:1px solid black; border-collapse: collapse">Fare la spesa o altre commissioni</td>
-            <td style="border:1px solid black; border-collapse: collapse"><input style="width:95%" type="radio" value="Sì" class="form-control" name="SpesaCommissioni" id="SpesaCommissioniSi" required></td>
-            <td style="border:1px solid black; border-collapse: collapse"><input style="width:97%" type="radio" value="No" class="form-control" name="SpesaCommissioni" id="SpesaCommissioniNo" required></td>
+            <td style="border:1px solid black; border-collapse: collapse"><input style="width:95%" type="radio" value="Sì"  name="SpesaCommissioni" id="SpesaCommissioniSi" required></td>
+            <td style="border:1px solid black; border-collapse: collapse"><input style="width:97%" type="radio" value="No"  name="SpesaCommissioni" id="SpesaCommissioniNo" required></td>
             <td style="border:1px solid black; border-collapse: collapse">Pulizia di fino</td>
-            <td style="border:1px solid black; border-collapse: collapse"><input style="width:95%" type="radio" value="Sì" class="form-control" name="PuliziaFino" id="PuliziaFinoSi" required></td>
-            <td style="border:1px solid black; border-collapse: collapse"><input style="width:97%" type="radio" value="No" class="form-control" name="PuliziaFino" id="PuliziaFinoNo" required></td>
+            <td style="border:1px solid black; border-collapse: collapse"><input style="width:95%" type="radio" value="Sì"  name="PuliziaFino" id="PuliziaFinoSi" required></td>
+            <td style="border:1px solid black; border-collapse: collapse"><input style="width:97%" type="radio" value="No"  name="PuliziaFino" id="PuliziaFinoNo" required></td>
           </tr>
 
           <tr style="border:1px solid black; border-collapse: collapse">
             <td style="border:1px solid black; border-collapse: collapse">Lingue straniere</td>
-            <td style="border:1px solid black; border-collapse: collapse"><input style="width:95%" type="radio" value="Sì" class="form-control" name="LingueStraniere" id="LingueStraniereSi" required></td>
-            <td style="border:1px solid black; border-collapse: collapse"><input style="width:97%" type="radio" value="No" class="form-control" name="LingueStraniere" id="LingueStraniereNo" required></td>
+            <td style="border:1px solid black; border-collapse: collapse"><input style="width:95%" type="radio" value="Sì"  name="LingueStraniere" id="LingueStraniereSi" required></td>
+            <td style="border:1px solid black; border-collapse: collapse"><input style="width:97%" type="radio" value="No"  name="LingueStraniere" id="LingueStraniereNo" required></td>
           </tr>
           
         </table>
@@ -2135,15 +2135,6 @@
 
 
 <script type="text/javascript">
-const form = $("#contact-form");
-  if (document.getElementById('state1')) {
-    const countUp = new CountUp('state1', document.getElementById("state1").getAttribute("countTo"));
-    if (!countUp.error) {
-      countUp.start();
-    } else {
-      console.error(countUp.error);
-    }
-  }
   if (document.getElementById('state2')) {
     const countUp1 = new CountUp('state2', document.getElementById("state2").getAttribute("countTo"));
     if (!countUp1.error) {
@@ -2167,14 +2158,14 @@ const form = $("#contact-form");
 
  
 async function invia(){
-  const radios=document.getElementById('AppartamentoCondominiale');
-  /*Array.prototype.forEach.call(radios, function(radio) {
-    if(radio.checked){
-      console.log(radio.value)
-    }
-}); */
+  const text=document.querySelectorAll('input[value=""]');
+  //const form=$('#form')
+  //const res = await axios.post("/send", form.serialize());
+  Array.prototype.forEach.call(text, function(t) {
+      console.log(t.id)
+}); 
 
-console.log(radios.value)
+
 
   /*var radios=document.getElementsByClassName('form-check-input')
   Array.prototype.forEach.call(radios, function(radio) {
