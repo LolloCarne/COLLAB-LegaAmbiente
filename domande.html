@@ -2158,14 +2158,20 @@
 
  
 async function invia(){
+  const input={};
   const text=document.querySelectorAll('input[value=""]');
-  //const form=$('#form')
-  //const res = await axios.post("/send", form.serialize());
+  var form=$('#form').serializeArray();
+
   Array.prototype.forEach.call(text, function(t) {
-      console.log(t.id)
+      //console.log(t.id)
+      if(t.value != ""){
+      obj={[t.id]:t.value}
+      Object.assign(input,obj)
+      }
+  
 }); 
-
-
+form.push(input);
+const res = await axios.post("/send",form);
 
   /*var radios=document.getElementsByClassName('form-check-input')
   Array.prototype.forEach.call(radios, function(radio) {
